@@ -30,6 +30,11 @@ const Home = () => {
     );
   };
 
+  //
+  const dataSaveRemove = () => {
+    localStorage.removeItem("saveFromData");
+  };
+
   // sdasdasda
   const dataFromSave = () => {
     const value = localStorage.getItem("saveFromData");
@@ -149,6 +154,7 @@ const Home = () => {
           dataSave={dataSave}
           dataFromSave={dataFromSave}
           setFormValues={setFormValues}
+          dataSaveRemove={dataSaveRemove}
         />
       </motion.div>
     </div>

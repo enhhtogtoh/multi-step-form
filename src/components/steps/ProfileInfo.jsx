@@ -24,6 +24,7 @@ export const ProfileInfo = ({
   handleDragOver,
   handleDragLeave,
   dataSave,
+  dataSaveRemove,
 }) => {
   const handleSubmit = () => {
     const { errors, isValid } = validateStepThree(formValues);
@@ -32,6 +33,7 @@ export const ProfileInfo = ({
     if (isValid) {
       handleClick();
       dataSave();
+      dataSaveRemove();
     }
   };
 
